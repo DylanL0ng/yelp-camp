@@ -17,15 +17,16 @@ var express = require("express"),
         campgroundRoutes    = require('./routes/campgrounds'),
         authRoutes          = require("./routes/auth")
     
-mongoose.connect("mongodb+srv://admin:" + encodeURIComponent('gTg37Rlu%#h4') + "@cluster0-kv9tg.mongodb.net/test?retryWrites=true&w=majority", 
-{ useNewUrlParser: true,
-  useCreateIndex: true
+    // ADD MONGODB
+    mongoose.connect("mongodb+srv://admin:" + encodeURIComponent('gTg37Rlu%#h4') + "@cluster0-kv9tg.mongodb.net/test?retryWrites=true&w=majority", 
+    { useNewUrlParser: true,
+      useCreateIndex: true
     
-}).then(() =>{
+    }).then(() =>{
     console.log('Connected to DB!');
-}).catch(err => {
+    }).catch(err => {
     console.log('ERROR:', err.message);
-});
+    });
 
 
 
