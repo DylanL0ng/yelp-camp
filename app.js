@@ -18,8 +18,9 @@ var express = require("express"),
         authRoutes          = require("./routes/auth")
     
     // export DATABASEURL=
+    const url = process.env.DATABASEURL || "mongodb+srv://admin:" + encodeURIComponent('gTg37Rlu%#h4') + "@cluster0-kv9tg.mongodb.net/test?retryWrites=true&w=majority"
     // Local MongoDB
-    mongoose.connect(process.env.DATABASEURL || "mongodb+srv://admin:" + encodeURIComponent('gTg37Rlu%#h4') + "@cluster0-kv9tg.mongodb.net/test?retryWrites=true&w=majority")
+    mongoose.connect(url)
     
     // ADD MONGODB
     // mongoose.connect("mongodb+srv://admin:" + encodeURIComponent('gTg37Rlu%#h4') + "@cluster0-kv9tg.mongodb.net/test?retryWrites=true&w=majority", 
