@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>YelpCamp</title>
+        <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+        <link rel='stylesheet' href='/stylesheets/main.css'>
+        
+    </head>
+    <body>
+        
+         <nav class="navbar navbar-expand-lg navbar-dark mb-4 bg-dark">
+          <a class="navbar-brand" href="/">YelpCamp</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                     
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+             <% if(!currentUser){ %>
+             
+            <li class="nav-item">
+                <a class="nav-link" href="/login">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/register">Register</a>
+            </li> 
+            
+          <% } else { %>
+            <li class="nav-item">
+                <a class="nav-link mr-3" href="#">Currently Logged In as <%= currentUser.username %></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/logout">Logout</a>
+            </li>
+        <% } %>
+        </ul>
+    </div>
+</div>
+        </nav>
+        <!--Alert-->
+        
+            <% if(error && error.length > 0){%>
+             <div class="alert alert-danger alert-dismissible" role="alert">
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                 <%=error%>
+             </div>
+             <% } %> 
+             <% if (success && success.length > 0){ %>
+             <div class="alert alert-success alert-dismissible" role="alert"><%=success%>
+             <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+             </div>
+             <% }%>
+        

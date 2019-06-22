@@ -1,0 +1,14 @@
+.img-thumbnail img{
+    width: 100%;
+}
+.img-thumbnail{
+    padding: 0;
+}
+
+.img-thumbnail .caption-full{
+    padding: 9px;
+}
+
+.alert{
+    border-radius: 0%;
+}
