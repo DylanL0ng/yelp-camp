@@ -19,7 +19,7 @@ var express = require("express"),
     
     // export DATABASEURL=
     // Local MongoDB
-    mongoose.connect(process.env.DATABASEURL)
+    mongoose.connect(process.env.DATABASEURL || "mongodb+srv://admin:" + encodeURIComponent('gTg37Rlu%#h4') + "@cluster0-kv9tg.mongodb.net/test?retryWrites=true&w=majority")
     
     // ADD MONGODB
     // mongoose.connect("mongodb+srv://admin:" + encodeURIComponent('gTg37Rlu%#h4') + "@cluster0-kv9tg.mongodb.net/test?retryWrites=true&w=majority", 
