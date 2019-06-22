@@ -17,16 +17,22 @@ var express = require("express"),
         campgroundRoutes    = require('./routes/campgrounds'),
         authRoutes          = require("./routes/auth")
     
-    // ADD MONGODB
-    mongoose.connect("mongodb+srv://admin:" + encodeURIComponent('gTg37Rlu%#h4') + "@cluster0-kv9tg.mongodb.net/test?retryWrites=true&w=majority", 
-    { useNewUrlParser: true,
-      useCreateIndex: true
+    // export DATABASEURL=
+    // Local MongoDB
+    mongoose.connect(process.env.DATABASEURL)
     
-    }).then(() =>{
-    console.log('Connected to DB!');
-    }).catch(err => {
-    console.log('ERROR:', err.message);
-    });
+    // ADD MONGODB
+    // mongoose.connect("mongodb+srv://admin:" + encodeURIComponent('gTg37Rlu%#h4') + "@cluster0-kv9tg.mongodb.net/test?retryWrites=true&w=majority", 
+    // { useNewUrlParser: true,
+    //   useCreateIndex: true
+    
+    // }).then(() =>{
+    // console.log('Connected to DB!');
+    // }).catch(err => {
+    // console.log('ERROR:', err.message);
+    // });
+    
+
 
 
 
