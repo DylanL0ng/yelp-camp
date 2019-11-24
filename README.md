@@ -18,3 +18,4 @@ This is a web application I made when I started coding, It was through a course 
 ## Acknowledgments
 
 * This was built as a project for a course I used when I started out in coding and I found it on my pc and thought I might share it
+* MongoDB and Bootstrap4 was also used in making this.
