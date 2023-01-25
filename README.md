@@ -1,21 +1,26 @@
 # YelpCamp
-This is a web application I made when I started coding, It was through a course but I learned alot
- and progressed alot since then
 
-## Dependencies
+A web application for discovering and sharing information about campgrounds, built using Node.js, Express, MongoDB, and Bootstrap.
 
-*   "body-parser": "^1.19.0",
-*   "connect-flash": "^0.1.1",
-*   "ejs": "^2.6.1",
-*   "express": "^4.17.1",
-*   "express-session": "^1.16.2",
-*   "method-override": "^3.0.0",
-*   "mongoose": "^5.5.13",
-*   "passport": "^0.4.0",
-*   "passport-local": "^1.0.0",
-*    "passport-local-mongoose": "^5.0.1"
-    
-## Acknowledgments
+## Features
+- User authentication
+- Ability to add, edit and delete campgrounds
+- Leave comments on campgrounds
+- View campground details such as location and amenities
+- Upload photos of campgrounds
 
-* This was built as a project for a course I used when I started out in coding and I found it on my pc and thought I might share it
-* MongoDB and Bootstrap4 was also used in making this.
+## Getting Started
+1. Clone or download the repository
+2. Install dependencies using `npm install`
+3. Start the application using `npm start`
+4. Open your browser and navigate to `http://localhost:3000`
+
+## Technologies Used
+- Node.js
+- Express
+- MongoDB
+- Bootstrap
+- Passport.js (for authentication)
+
+## Acknowledgements
+This application was created as a learning project for web development as a part of a course, utilizing the technologies listed above.
